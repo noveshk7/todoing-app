@@ -1,5 +1,4 @@
-/* Base styles and CSS variables */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --primary-color: #646cff;
@@ -28,14 +27,12 @@ body {
   font-weight: 500;
 }
 
-/* App Container */
 .app {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Navbar Styles */
 .navbar {
   position: relative;
   display: flex;
@@ -100,7 +97,6 @@ body {
   transition: 0.3s;
 }
 
-/* Mobile menu animation */
 .mobile-menu-btn.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -113,14 +109,15 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Todo Form */
 .todo-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.todo-input {
+.todo-input,
+.reminder-input {
   flex: 1;
   padding: 0.8rem;
   font-family: "Poppins", serif;
@@ -133,7 +130,8 @@ body {
   transition: border-color 0.3s;
 }
 
-.todo-input:focus {
+.todo-input:focus,
+.reminder-input:focus {
   outline: none;
   border-color: var(--primary-color);
 }
@@ -155,7 +153,6 @@ body {
   background-color: var(--hover-color);
 }
 
-/* Todo List */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -205,7 +202,7 @@ body {
 }
 
 .todo-label input[type="checkbox"]:checked + .checkmark::after {
-  content: '✓';
+  content: "✓";
   position: absolute;
   color: white;
   font-size: 14px;
@@ -255,7 +252,12 @@ body {
   border-color: #ef4444;
 }
 
-/* Animations */
+.reminder-date {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  margin-left: 1rem;
+}
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -267,7 +269,6 @@ body {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: flex;
@@ -318,4 +319,11 @@ body {
   .todo-text {
     font-size: 0.9rem;
   }
+
+  .reminder-date {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
 }
+
