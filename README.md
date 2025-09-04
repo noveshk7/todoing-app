@@ -60,13 +60,35 @@ npm run preview
 
 ---
 
-## 👨‍💻 Author
+## 📖 Usage
+1. Open the app in your browser.
+2. Add tasks using the input field.
+3. Mark tasks as done when completed.
+4. Manage your todo list efficiently.
 
-- Developed by **Novesh Kumar Gautam**
+---
+
+## 🌟 Future Enhancements
+- 🗂️ Task categories
+- 📅 Due dates and reminders
+- 🌓 Dark/Light mode
+- 💾 Persistent storage with LocalStorage or database
+
+---
+
+## 🤝 Contributing
+Contributions are welcome!
+- Fork the repo
+- Create a feature branch
+- Submit a pull request 🚀
+
+---
+
+## 👨‍💻 Author
+- Developed by **Novesh Kumar Gautam**  
 - GitHub: [noveshk7](https://github.com/noveshk7)
 
 ---
 
 ## 📄 License
-
 This project is licensed under the **MIT License**.
